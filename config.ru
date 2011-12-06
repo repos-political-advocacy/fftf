@@ -9,14 +9,12 @@ use Rack::Static , :urls => {
     "/pipa/artists/" => "pipa/artists/index.html", 
     "/colbert-sopa" => "colbert-sopa/index.html", 
     "/colbert-sopa/" => "colbert-sopa/index.html", 
-    "/cease-and-desist/" => "cease-and-desist/index.html", 
-    "/cease-and-desist" => "cease-and-desist/index.html", 
+    "/pipa/cease-and-desist/" => "pipa/cease-and-desist/index.html", 
+    "/pipa/cease-and-desist" => "pipa/cease-and-desist/index.html", 
     "/privacy/" => "privacy/index.html", 
     "/privacy" => "privacy/index.html", 
     } , :root => "public"
 
 run Rack::URLMap.new({
   "/"      => Rack::Directory.new("public"),
-  "/modal" => Rack::Directory.new("public/modal"),
-  "/modal/state-dept-petition" => Rack::Directory.new("public/modal/state-dept-petition")
 })
