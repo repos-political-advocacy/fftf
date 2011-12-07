@@ -16,6 +16,10 @@ background: url(/pipa/images/input04.png) no-repeat;
 .headerright {text-align: right;}
 
 textarea.whitebox {border: 0; margin-top: 20px; font-size: 16px;}
+
+.vjs-no-video {
+	text-align: center;
+}
 </style>
 
 <meta property="og:title" content="SOPA Censorship Bill on the Colbert Report" />
@@ -52,14 +56,34 @@ textarea.whitebox {border: 0; margin-top: 20px; font-size: 16px;}
 			</div>
 		</div>
 		<div class="videoholder">
-			
-			<embed style='display:block; margin-bottom: 20px;' src='http://media.mtvnservices.com/mgid:cms:item:comedycentral.com:403465' width='802' height='448' type='application/x-shockwave-flash' wmode='window' allowFullscreen='true' flashvars='autoPlay=false' allowscriptaccess='always' allownetworking='all' bgcolor='#000000'></embed>
-			
-			
-			<embed style='display:block' src='http://media.mtvnservices.com/mgid:cms:item:comedycentral.com:403466' width='802' height='448' type='application/x-shockwave-flash' wmode='window' allowFullscreen='true' flashvars='autoPlay=false' allowscriptaccess='always' allownetworking='all' bgcolor='#000000'></embed>
-
-			
-			</div>
+			<!-- Begin VideoJS -->
+		  <div class="video-js-box">
+		    <!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+		    <video class="video-js" width="802" height="448" controls preload poster="https://s3.amazonaws.com/fftf.media/Colbert.png">
+		      <source src="https://s3.amazonaws.com/fftf.media/Colbert.m4v" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+		      <source src="https://s3.amazonaws.com/fftf.media/Colbert.webm" type='video/webm; codecs="vp8, vorbis"' />
+		      <source src="https://s3.amazonaws.com/fftf.media/Colbert.ogv" type='video/ogg; codecs="theora, vorbis"' />
+		      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+		      <object id="flash_fallback_1" class="vjs-flash-fallback" width="802" height="448" type="application/x-shockwave-flash" 
+		        data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+		        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+		        <param name="allowfullscreen" value="true" />
+		        <param name="flashvars" 
+		          value='config={"playlist":["https://s3.amazonaws.com/fftf.media/Colbert.png", {"url": "https://s3.amazonaws.com/fftf.media/Colbert.m4v","autoPlay":false,"autoBuffering":true}]}' />
+		        <!-- Image Fallback. Typically the same as the poster image. -->
+		        <img src="https://s3.amazonaws.com/fftf.media/Colbert.png" width="802" height="448" alt="Poster Image" 
+		          title="No video playback capabilities." />
+		      </object>
+		    </video>
+		    <!-- Download links provided for devices that can't play video in the browser. -->
+		    <p class="vjs-no-video"><strong>Download Video:</strong>
+		      <a href="https://s3.amazonaws.com/fftf.media/Colbert.m4v">MP4</a>,
+		      <a href="https://s3.amazonaws.com/fftf.media/Colbert.webm">WebM</a>,
+		      <a href="https://s3.amazonaws.com/fftf.media/Colbert.ogv">Ogg</a><br>
+		    </p>
+		  </div>
+		  <!-- End VideoJS -->
+		</div>
 		<div class="bottomarea">
 			<div class="boxtop"><!----></div>
 			<div class="boxinfo">
