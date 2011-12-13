@@ -13,6 +13,9 @@ use Rack::Static , :urls => {
     "/pipa/cease-and-desist" => "pipa/cease-and-desist/index.html", 
     "/privacy/" => "privacy/index.html", 
     "/privacy" => "privacy/index.html", 
+    "/about" => "about/index.html", 
+    "/about/" => "about/index.html", 
+
     } , :root => "public"
 
 run Rack::URLMap.new({
