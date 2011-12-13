@@ -39,17 +39,21 @@
         }
 
             #intro, #ask {
-                width: 700px;
                 color: #363636;
-                font-size: 22px;
+                font-size: 32px;
                 font-weight: bold;
                 text-align: center;
                 margin: 0 auto 35px auto;
             }
+			
+			#intro {
+                color: #e94b3a;
+			}
 
                 #intro a {
                     color: #e94b3a;
                     text-decoration: none;
+					border-bottom: 1px solid #e2e2e2;
                 }
 
     				#intro a:hover {
@@ -57,13 +61,13 @@
 					}
 
             #reasons {
-                margin-bottom: 60px;
+                margin-bottom: 40px;
                 padding-top: 20px;
             }
 
                 #reasons .box {
                     width: 206px;
-                    height: 420px;
+                    height: 300px;
                     color: #fff;
                     font-size: 14px;
                     font-weight: bold;
@@ -144,9 +148,15 @@
                 -moz-box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, .17), inset 0px 0px 76px 0px rgba(0, 0, 0, .04);
                 box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, .17), inset 0px 0px 76px 0px rgba(0, 0, 0, .04);
                 margin: auto;
-                padding: 55px 40px 40px 40px;
+                padding: 0px 40px 40px 40px;
                 position: relative;
             }
+			#call h1 {
+				font-size: 48px;
+				color:black;
+				text-align:center;
+				margin-bottom:10px;
+			}
 
                 #call .icon {
                     width: 74px;
@@ -214,8 +224,22 @@
                         cursor: pointer;
                         display: block;
                     }
-
-					a.send {width: 700px; font-size: 38px;}
+					
+					#email_alternative {
+						text-align:center;
+						font-weight:bold;
+						font-size: 28px;
+						color: #898989;
+						margin:0;
+					}
+					a.send {
+						width: 140px; 
+						font-size: 24px;
+						background-color: #898989;
+						display:inline-block;
+						padding: 12px;
+						margin:0;
+					}
 
                         #call_form button:active {
                             -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .15);
@@ -253,16 +277,15 @@
 						display: block;
 					}
 					
-				#share {
-					width: 100px;
-					height: 100px;
-					position: fixed;
-					top: 70px;
-					left: 10px;
-				}
+					#share {
+							width: 100px;
+							height: 100px;
+							position: fixed;
+							top: 70px;
+							left: 10px;
+						}
 				
-				#share div {margin-bottom: 10px;}
-				
+						#share div {margin-bottom: 10px;}
 
     .footerinforight {
 		text-align: center; 
@@ -296,27 +319,26 @@
 
     <div id="container">
         <div id="intro">
-            The <a href="http://judiciary.house.gov/hearings/pdf/112%20HR%203261.pdf">Stop Online Piracy Act</a> could pass this week.<br/>
-            <a href="#call">Call your Representatives now</a> to be heard<br/>before the bill is finalized and voted on.
+            The <a href="http://judiciary.house.gov/hearings/pdf/112%20HR%203261.pdf">Stop Online Piracy Act</a> could pass <em>this week</em>.
         </div>
 
         <div id="reasons">
             <a class="box blue" href="http://iworkfortheinternet.org/">
                 <div class="icon"></div>
                 <div class="title"></div>
-                America desperately needs jobs.  The Internet is a powerful engine of job creation, lowering the cost of start-ups and powering American sales and exports and around the world.  If Congress interferes with the basic architecture of the Internet by passing the deeply flawed Stop Online Piracy Act, hundreds of thousands of jobs will be at risk.  We can't let this bill stop the growth &#8211; we're just getting started!
+                America desperately needs jobs. If Congress interferes with the architecture of the Internet by passing the deeply flawed Stop Online Piracy Act, hundreds of thousands of jobs will be at risk.
             </a>
 
             <a class="box red" href="http://americancensorship.org/">
                 <div class="icon"></div>
                 <div class="title"></div>
-                If the Stop Online Piracy Act becomes law, the government will have created America's first system for censoring the Internet.  We cannot allow America to become like China where voices are censored without judicial oversight. Of course we must have and enforce effective rules to protect copyrighted material, but the proposals in SOPA are counter-productive and dangerous to our freedoms. 
+                If the Stop Online Piracy Act becomes law, the government will have created America's first system for censoring the Internet. We cannot allow America to become like China where voices are censored without judicial oversight.
             </a>
 
             <a class="box yellow" href="http://trustnerds.org/">
                 <div class="icon"></div>
                 <div class="title"></div>
-                The Stop Online Piracy Act would actually damage the security of the Internet, rendering it more vulnerable to crime, attack, and misuse, and making it harder to catch the bad guys.  Sound implausible?  The experts in our government's own cybersecurity research center say that SOPA would be ineffective and harm Internet security.  SOPA threatens to make the Internet a more dangerous, less reliable place.
+                Our government’s own cyber-security research center asserted that SOPA could harm US security. Pirates will use more unlawful means and it will be even harder for law enforcement to catch and punish the bad guys.
             </a>
 
             <div style="clear:both"></div>
@@ -333,16 +355,12 @@
                 $('#thanks').show();
             }
         </script>
-
-        <div id="ask">
-          SOPA could pass this week. Call Congress now.
-        </div>
         
         <div id="call">
             <a name="call"></a>
-            <div class="icon"></div>
+			<h1>Call your representative now.</h1>
             <div class="rag">
-                Submit this form to receive talking points about this bill. We'll then connect you to your House Representative so you can tell them what you think. You can also <a href="http://americancensorship.org">email them</a>.
+                Submit this form to receive talking points about this bill. We'll then connect you to your House Representative so you can tell them what you think.
             </div>
             <form id="call_form" action="http://tumblr.mcommons.com/profiles/join" method="POST">
                 <input type="hidden" name="redirect_to" value="http://fightforthefuture.org/?thanks"/>
@@ -364,10 +382,8 @@
                     Call My Representative
                 </button>
 
-				<p class="small">Fight for the Future and Demand Progress may contact you about related campaigns.<br />We will not share your email with anyone. <a href="http://fightforthefuture.org/privacy" title="Privacy Policy.">Privacy Policy</a></p>
-
                 <div class="divider"></div>
-				<a href="http://americancensorship.org/posts/1/uncensor#general" type="submit" class="send">Can&#8217;t call? Then please send an email.</a>
+				<p id="email_alternative">Not able to make the call? &nbsp;&nbsp;<a href="http://americancensorship.org/posts/1/uncensor#general" type="submit" class="send">Email them</a></p>
                 <div class="counter" style="display:none;">
                     <strong>120,829</strong> minutes spent talking with representatives.
                 </div>                
@@ -375,16 +391,20 @@
         </div>
         
         <div id="share">
-            <div class="each" style="display:inline-block; width:110px; text-align:left; position:relative; top:-5px"><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Ffightforthefuture.org%2F&name=Urgent%3A%20Stop%20SOPA&description=The%20U.S.%20House%20will%20vote%20to%20finalize%20the%20Stop%20Online%20Piracy%20Act%20this%20week.%20This%20well-intentioned%20but%20deeply-flawed%20bill%20would%20damage%20the%20security%20of%20the%20net%2C%20impose%20an%20online%20censorship%20system%2C%20and%20put%20Internet-driven%20job%20growth%20at%20risk.%20We%20can%20only%20stop%20SOPA%20if%20we%20make%20our%20voices%20heard.%20%3Ca%20href%3D%22http%3A%2F%2Ffightforthefuture.org%2F%22%3ECall%20your%20Representatives%20today!%3C%2Fa%3E" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a></div>
+            <div style="display:inline-block; width:110px; text-align:left; position:relative; top:-5px"><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Ffightforthefuture.org%2F&name=Urgent%3A%20Stop%20SOPA&description=The%20U.S.%20House%20will%20vote%20to%20finalize%20the%20Stop%20Online%20Piracy%20Act%20this%20week.%20This%20well-intentioned%20but%20deeply-flawed%20bill%20would%20damage%20the%20security%20of%20the%20net%2C%20impose%20an%20online%20censorship%20system%2C%20and%20put%20Internet-driven%20job%20growth%20at%20risk.%20We%20can%20only%20stop%20SOPA%20if%20we%20make%20our%20voices%20heard.%20%3Ca%20href%3D%22http%3A%2F%2Ffightforthefuture.org%2F%22%3ECall%20your%20Representatives%20today!%3C%2Fa%3E" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;">Share on Tumblr</a></div>
             
-            <div class="each" ><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fightforthefuture.org/" data-text="The Stop Online Piracy Act would harm jobs, security, free speech. Up for a vote this week. Call TODAY:" data-lang="en" data-hashtags="SOPA">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fightforthefuture.org/" data-text="The Stop Online Piracy Act would harm jobs, security, free speech. Up for a vote this week. Call TODAY:" data-lang="en" data-hashtags="SOPA">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                         
-            <div  class="each" style="display:inline-block; position:relative; top:-3px"><div class="fb-like" data-href="http://fightforthefuture.org/" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div></div>
+            <div style="display:inline-block; position:relative; top:-3px"><div class="fb-like" data-href="http://fightforthefuture.org/" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div></div>
         </div>
     </div>
+	
 
-	<div class="footerinforight"><p>Fight for the Future &copy; 2011&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/about/">About Fight for the Future</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://fightforthefuture.org/privacy/">Privacy policy</a></p></div>
+	<div class="footerinforight">
+		<p class="small">Fight for the Future and Demand Progress may contact you about related campaigns.<br />We will not share your email with anyone. <a href="http://fightforthefuture.org/privacy" title="Privacy Policy.">Privacy Policy</a></p>
+		<p class="small">Fight for the Future &copy; 2011</p>
+	</div>
 
 
     
