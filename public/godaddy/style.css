@@ -158,7 +158,7 @@ a:hover{
 
 .formarea button{
 	width:141px;
-	height:93px;
+	height:40px;
 	padding:0;
 	margin:0 0 0 11px;
 	cursor:pointer;
@@ -191,9 +191,10 @@ a:hover{
 	font-size: 18px;
 	float: left;
 	clear: both;
-	width: 354px;
+	width: 454px;
 	text-align: center;
 	padding-top: 10px;
+	margin-top: 20px;
 }
 
 #custom-211 {
@@ -240,4 +241,9 @@ a:hover{
 	line-height: 20px;
 	color: #555;
 	margin-bottom: 25px;
+}
+
+#custom-211 {
+	width: 52px;
+	margin-top: 20px;
 }
