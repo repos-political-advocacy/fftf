@@ -21,6 +21,8 @@ use Rack::Static , :urls => {
     "/about/" => "about/index.html", 
     "/telethon/" => "telethon/index.html", 
     "/telethon" => "telethon/index.html", 
+    "/donation/thanks" => "donation/thanks/index.html", 
+    "/donation/thanks/" => "donation/thanks/index.html", 
 
     } , :root => "public"
 
