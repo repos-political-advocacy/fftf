@@ -1,6 +1,8 @@
 use Rack::Static , :urls => { 
     "/" => "index.html", 
     "/index.html" => "index.html", 
+    "/jobs" => "jobs/index.html", 
+    "/jobs/" => "jobs/index.html", 
     "/pipa" => "pipa/index.html", 
     "/pipa/" => "pipa/index.html", 
     "/PIPA/" => "pipa/index.html", 
