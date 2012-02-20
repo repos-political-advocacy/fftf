@@ -245,3 +245,5 @@ ul.campaign li span {
 	font-weight: bold;
 	text-align: center;
 }
+
+p strong {padding-bottom: -20px; margin-bottom: -20px; display: block;}
