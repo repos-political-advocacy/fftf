@@ -2,6 +2,10 @@ use Rack::Static , :urls => {
     "/" => "index.html", 
     "/index.html" => "index.html", 
     "/jobs" => "jobs/index.html", 
+    "/default" => "default/index.html", 
+
+    "/default/" => "default/index.html", 
+
     "/jobs/" => "jobs/index.html", 
     "/jobs/ui-ux-visual-designer/" => "jobs/ui-ux-visual-designer/index.html", 
     "/jobs/ui-ux-visual-designer" => "jobs/ui-ux-visual-designer/index.html", 
