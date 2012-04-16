@@ -45,8 +45,9 @@ use Rack::Static , :urls => {
     "/telethon/" => "telethon/index.html", 
     "/telethon" => "telethon/index.html", 
     "/donation/thanks" => "donation/thanks/index.html", 
-    "/donation/thanks/" => "donation/thanks/index.html", 
-
+    "/donation/thanks/" => "donation/thanks/index.html",
+    "/apology" => "apology/index.html",
+    "/apology/" => "apology/index.html"
     } , :root => "public"
 
 run Rack::URLMap.new({
